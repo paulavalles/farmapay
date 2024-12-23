@@ -13,20 +13,27 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/dhm2akc.css">
     <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
-<body class="faq">
+<body>
     <header>
         <main>
-            <div class="logo desktop"><a href="/"><img src="assets/logo-white.png" alt="logo farmapay"></a></div>
-            <div class="logo mobile"><a href="/"><img src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
-            <ul class="menu">
+            <div class="logo desktop" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a href="/"><img
+                        src="assets/logo-white.png" alt="logo farmapay"></a></div>
+            <div class="logo mobile" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><a href="/"><img
+                        src="assets/logo-icon.svg" alt="logo farmapay"></a></div>
+            <ul class="menu" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
                 <li><a href="">Descubre farmapay</a>
                     <ul class="submenu">
-                        <li><a href="/#funcionalidades">Funcionalidades</a></li>
-                        <li><a href="/#medios">Medios de cobro y comisiones</a></li>
-                        <li><a href="/#simulador">Simulación de venta</a></li>
-                        <li><a href="/#crear-cuenta">Crear cuenta</a></li>
+                        <li><a href="#funcionalidades">Funcionalidades</a></li>
+                        <li><a href="#medios">Medios de cobro y comisiones</a></li>
+                        <li><a href="#simulador">Simulación de venta</a></li>
+                        <li><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta</a></li>
                     </ul>
                 </li>
                 <li><a href="">Ayuda</a>
@@ -38,224 +45,235 @@
                 </li>
             </ul>
         </main>
-        <div class="buttons">
-            <button class="button--secondary"><a href="https://comercios.farmapay.com.ar/">Crear cuenta</a></button>
-            <button class="button--primary"><a href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
+        <div class="buttons" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <button class="button--secondary"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear
+                    cuenta</a></button>
+            <button class="button--primary"><a target="_blank"
+                    href="https://comercios.farmapay.com.ar/login">Ingresá</a></button>
         </div>
     </header>
-    <section class="cabecera wrapper">
-        <div class="wrapper">
-            <h1>Estamos <br>
-                para <b>ayudarte</b></h1>
-            <img src="assets/iconayuda.svg" alt="símbolo de pregunta">
+    <section class="hero">
+        <div class="hero-title" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+            <div class="title--primary">Somos </br> la <b class="color--secondary">solución</br> de cobros</b></div>
+            <div class="title--secondary">exclusiva para </br> <b class="color--secondary">farmacias</b></div>
+        </div>
+        <div class="canvas">
+            <div class="pos">
+                <img class="" data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-in-sine" src="assets/POS.svg" alt="" srcset="">
+            </div>
+            <div class="dolar">
+                <img class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" id="dolar" src="assets/amount.png" alt="" srcset="">
+            </div>
+
+            <div class="graphic-1">
+                <img class="" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" id="grafico-barras" src="assets/grafico-de-barras.gif" alt="gráfico de barras"
+                    srcset="">
+            </div>
+            <div class="graphic-2">
+                <img class="" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine" id="grafico-lineas" src="assets/grafico-de-linea.gif" alt="gráfico de líneas"
+                    srcset="">
+            </div>
+            <a class="button--CTA" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine" target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta <i>></i></a>
         </div>
     </section>
-    <br>
-    <section class="preguntas">
-        <p>Encontrá toda la información que necesitás para gestionar tus cobros
-            con <b>farmapay</b>. Si te queda alguna duda o necesitás asistencia personalizada,
-            contactá a nuestro equipo.</p>
-        <br>
-
-        <div class="accordion">
-            <!-- Item 1 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-1" checked />
-                <label for="accordion-1" class="accordion-header">¿Qué es farmapay y cómo puede beneficiar a mi
-                    farmacia?</label>
-                <div class="accordion-content">
-                    <p>Farmapay es la primera solución de cobros exclusiva para farmacias. Te permite aceptar pagos con
-                        tarjetas de crédito, débito, transferencias y QR, y llevar un registro detallado de tus
-                        transacciones en tiempo real. Además, mejora los procesos administrativos y ofrece mejores
-                        plazos de acreditación para tus ventas.</p>
-                    <br>
-                    <p>A través de nuestra plataforma, podrás gestionar tu dinero de manera más eficiente. farmapay
-                        centraliza todos los movimientos financieros de tu farmacia en una cuenta CVU exclusiva y te da
-                        la posibilidad de ganar intereses todos los días a través de nuestra cuenta remunerada.</p>
-                    <br>
-                    <p>Con farmapay, simplificás tus cobros, maximizás tus ganancias y potenciás la gestión financiera
-                        de tu negocio.</p>
+    <section class="section--1" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine" id="funcionalidades"><br>
+        <h1 class="color--primary">Cobrá, invertí y gestioná</h1>
+        <h3>el dinero de tu farmacia</h3>
+        <div class="items">
+            <article class="item item--1" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="text">Inversión del dinero
+                    con mayor rentabilidad
+                    y más ganancias.</div>
+                <img id="grafico-card" src="assets/grafico-card.gif" alt="" srcset="">
+            </article>
+            <article class="item item--2" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                <div class="text">Cobros con todos
+                    los medios de pago
+                    y mejores plazos
+                    de acreditación.</div>
+                <div class="pos">
+                    <img id="estructura-pos" src="assets/POS.svg" alt="" srcset="">
+                    <img id="interior-pos" src="assets/Interior-POS.gif" alt="" srcset="">
+                </div>
+            </article>
+            <article class="item item--3" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="text">Gestión de todos
+                    los movimientos
+                    desde tu cuenta
+                    <b>farmapay</b>.
+                </div>
+                <img id="grafico-notebook" src="assets/grafico-notebook.gif" alt="" srcset="">
+            </article>
+        </div>
+    </section>
+    <section class="section--2">
+        <h2 data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">Descubrí los beneficios de tener <b class="highlight color--primary">farmapay</b></h2>
+        <div class="articles">
+            <article class="article--1">
+                <img class="" data-aos="fade-right" src="assets/01.png" alt=""
+                    srcset="">
+                <div class="" data-aos="fade-left">
+                    <h4>Visibilidad
+                        y transparencia</h4>
+                    <p>Sabés exactamente cuándo se acredita el dinero de tus ventas.</p>
+                </div>
+            </article>
+            <article class="article--2">
+                <img class="" data-aos="fade-right" src="assets/02.png" alt=""
+                    srcset="">
+                <div class="" data-aos="fade-left">
+                    <h4>Simplicidad
+                        y gestión</h4>
+                    <p>Ahorrá tiempo con conciliaciones
+                        automáticas y descargá reportes
+                        mensuales o diarios para controlar
+                        tus movimientos.</p>
+                </div>
+            </article>
+            <article class="article--3">
+                <img class="" data-aos="fade-right" src="assets/03.png" alt=""
+                    srcset="">
+                <div class="" data-aos="fade-left">
+                    <h4>Rentabilidad
+                        y ganancias</h4>
+                    <p>Podés invertir el saldo de tu cuenta
+                        y generar rendimientos diarios
+                        y así, tu dinero rinde más.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="simulador" id="simulador"><br>
+        <h2 data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">Simulá una venta</h2>
+        <h4 data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine" class="subtitle">Te mostraremos el plazo de acreditación y el monto
+            que recibirás, sin sorpresas ni cargos ocultos.</h4>
+        <div class="simular">
+            <div class="simulador--izq" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="input">
+                    <label for="">Monto de tu venta</label>
+                    <div class="subtitle" style="margin-bottom: 6px;">(ingresá el dinero total de tu venta)</div>
+                    <input type="number" class="amount" value="1500">
+                </div>
+                <br>
+                <div class="select">
+                    <label for="">Medio de cobro</label>
+                    <div class="subtitle" style="margin-bottom: 6px;">(Seleccioná el medio cobro correspondiente)</div>
+                    <div class="custom-select">
+                        <select>
+                            <option value="tdd">Tarjeta de débito</option>
+                            <option value="tdc">Tarjeta de crédito</option>
+                            <option value="qr">QR (dinero en cuenta)</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-
-            <!-- Item 2 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-2" />
-                <label for="accordion-2" class="accordion-header">Quiero sumar farmapay a mi farmacia. ¿Cómo
-                    hago?</label>
-                <div class="accordion-content">
-                    <p>Para comenzar deberás completar el proceso de alta de comercio.</p>
-                    <br>
-                    <li>Ingresá a este <a target="_blank" href="">link</a> para conocer los requisitos y la
-                        documentación necesaria.</li>
-                    <li>Seguí los pasos indicados y completá tu información.</li>
-                    <li>Revisaremos tu información para activar tu cuenta.</li>
-                    <li>Una vez aprobada, te enviaremos el POS y el kit de instalación junto con las instrucciones para
-                        activar tu cuenta y comenzar a cobrar.</li>
-                    <br>
-                    <p>Si necesitás ayuda en cualquier momento, podés llamarnos al <b>0800 345 1246</b>, de lunes a
-                        sábados, de 8 a 20 h. ¡Estamos para acompañarte!</p>
+            <div class="simulador--der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div>
+                    <div class="title">Monto a acreditar:</div>
+                    <div class="subtitle">(El dinero que recibirás por tu venta)</div>
                 </div>
-            </div>
-
-            <!-- Item 3 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-3" />
-                <label for="accordion-3" class="accordion-header">¿Cuándo puedo disponer del dinero de los
-                    pagos?</label>
-                <div class="accordion-content">
-                    <p>El dinero de tus ventas estará disponible en los siguientes plazos, según el medio de pago:</p>
-                    <br>
-                    <p><b>Tarjeta de débito:</b> El dinero estará disponible en tu cuenta en <b>24 horas</b> hábiles.
-                    </p>
-                    <p><b>Tarjeta de crédito:</b> La acreditación se realiza en <b>8 días</b> hábiles.</p>
-                    <br>
-                    <p>En nuestra plataforma tendrás acceso a un calendario que te muestra las fechas exactas y los
-                        montos de las acreditaciones, ayudándote a organizar y gestionar mejor tus finanzas.</p>
+                <div class="result">
+                    <div class="line total">
+                        <div class="text">Total cobrado </div>
+                        <div class="amount">$1.500</div>
+                    </div>
+                    <div class="line comission">
+                        <div>
+                            <div class="text">Comisión:</div>
+                            <div class="flex-row">
+                                <!-- <div class="subtitle"><s class="color--disabled">(1,8% + IVA)</s></div> -->
+                                <div class="subtitle subtitle2">(1,6% + IVA)</div>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <!-- <div class="amount"><s class="color--disabled">- ($90,00)</s></div> -->
+                            <div class="amount amount2">- ($24,00)</div>
+                        </div>
+                    </div>
+                    <div class="line total-send">
+                        <div class="text">Total a recibir: </div>
+                        <div class="amount">$1.476</div>
+                    </div>
+                    <div class="line time">
+                        <div>
+                            <div class="text">Tiempo de acreditación:</div>
+                            <div class="subtitle">(en días hábiles)</div>
+                        </div>
+                        <div class="amount">24hs</div>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Item 4 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-4" />
-                <label for="accordion-4" class="accordion-header">¿Puedo retirar el dinero?</label>
-                <div class="accordion-content">
-                    <p>Si, Podés transferir fondos a tus cuentas o a terceros, pagar servicios o proveedores, y retirar
-                        el dinero disponible en tu cuenta cuando lo necesites.</p>
-                </div>
-            </div>
-
-            <!-- Item 5 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-5" />
-                <label for="accordion-5" class="accordion-header">¿Qué medios de cobro ofrece farmapay?</label>
-                <div class="accordion-content">
-                    <p><b>POS Smart farmapay:</b></p>
-                    <p>
-                        Con nuestra terminal, podés cobrar de manera rápida y segura. Acepta todas las tarjetas de
-                        débito y crédito, incluyendo chip, banda magnética, contactless y también pagos mediante QR.
-                    </p>
-                    <br>
-                    <p>
-                        Además, el lector cuenta con un plan de datos y se puede conectar a Wi-Fi, lo que te permite
-                        imprimir y enviar los comprobantes de cada transacción de forma sencilla.
-                    </p>
-                    <br>
-                    <p><b>Link de pago:</b></p>
-                    <p>
-                        Con el Link de Pago, podés cobrar de forma segura a distancia. Enviá el link por WhatsApp, email
-                        u otros canales digitales para que tus clientes paguen con tarjetas desde donde estén. Es la
-                        solución ideal para vender más y recibir pagos de forma rápida y fácil desde cualquier lugar.
-                    </p>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Item 6 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-6" />
-                <label for="accordion-6" class="accordion-header">¿Cuánto debo pagar por cada venta?</label>
-                <div class="accordion-content">
-                    <p>Las comisiones varían según el medio de cobro utilizado:</p>
-                    <br>
-                    <li>
-                        Para cobros con <b>Tarjeta de débito</b>, pagarás una comisión del <b>1,6% + IVA</b> por cada
-                        venta, con acreditación en 24 horas.
-                    </li>
-                    <li>
-                        Para cobros con <b>Tarjeta de crédito</b>, pagarás una comisión del <b>2,7% + IVA</b> por cada
-                        venta, con acreditación en 8 días hábiles.</p>
-                    </li>
-                </div>
-            </div>
-
-            <!-- Item 7 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-7" />
-                <label for="accordion-7" class="accordion-header">¿farmapay es seguro para realizar
-                    transacciones?</label>
-                <div class="accordion-content">
-                    <p>Sí, garantizamos los más altos estándares de seguridad en cada operación para proteger tus
-                        transacciones y brindarte confianza y efectividad.</p>
-                </div>
-            </div>
-
-            <!-- Item 8 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-8" />
-                <label for="accordion-8" class="accordion-header">¿Cómo puedo invertir con farmapay?</label>
-                <div class="accordion-content">
-                    <p>Nuestra cuenta remunerada genera rendimientos diarios con el saldo disponible. Este dinero no
-                        tiene límites ni plazos y podés retirarlo en cualquier momento. Así, maximizás las ganancias de
-                        tu farmacia.</p>
-                </div>
-            </div>
-
-            <!-- Item 9 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-9" />
-                <label for="accordion-9" class="accordion-header">¿Debo pagar por utilizar farmapay?</label>
-                <div class="accordion-content">
-                    <p>No, farmapay no tiene costos de apertura ni mantenimiento. Te proporcionamos el POS y los
-                        materiales necesarios sin costo inicial. Solo pagás una comisión por cada venta. Además, al
-                        abrir tu cuenta, tendrás acceso gratuito a nuestra plataforma integral, donde podrás llevar un
-                        control de todos tus movimientos, generar reportes y aprovechar todas las funcionalidades
-                        disponibles.</p>
-                </div>
-            </div>
-
-            <!-- Item 10 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-10" />
-                <label for="accordion-10" class="accordion-header">Mi droguería me presentó farmapay. ¿Puedo avanzar con
-                    ellos?</label>
-                <div class="accordion-content">
-                    <p>Trabajamos con droguerías de todo el país para llegar a más farmacias. Podés avanzar con tu
-                        droguería de confianza, pero el alta deberá completarla tu farmacia directamente en <a
-                            target="_blank" href="https://crearcuenta.farmapay.com.ar/">nuestro formulario</a>.</p>
-                </div>
-            </div>
-
-            <!-- Item 11 -->
-            <div class="accordion-item">
-                <input type="radio" name="accordion" id="accordion-11" />
-                <label for="accordion-11" class="accordion-header">Necesito comunicarme con farmapay</label>
-                <div class="accordion-content">
-                    <p>Si ya sos usuario o estás realizando el proceso de alta de comercio y tenés alguna consulta,
-                        podés comunicarte con nuestra Asistencia Virtual. Ingresá a <a target="_blank"
-                            href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Formulario de Contacto</a>,
-                        seleccioná el motivo de tu consulta en el formulario y nuestro equipo se pondrá en contacto
-                        contigo.</p>
-                    <br>
-                    <p>Si tenés otras dudas, podés comunicarte con nosotros por teléfono llamando al
-                        <b>0800-345-1246</b>, de lunes a sábados, de 08:00 a 20:00 hs. ¡Estamos para ayudarte!</p>
-                </div>
+                <div class="notes">*Estos valores no contemplan IVA ni otros impuestos que pudieran aplicar.</div>
             </div>
         </div>
     </section>
-    <section class="cuerpo wrapper">
-        <div class="wrapper">
-            <h3>¿No encontraste lo que buscabas?</h3>
-            <div class="contacto">
-                <div class="izq">
-                    <h3>Atención telefónica</h3>
-                    <p>Llamanos al <b>0800-345-1246</b>,<br>
-                        de lunes a sábados <br>
-                        de 08:00 a 20:00 hs.</p>
-                </div>
-                <div class="der">
-                    <h3>Asistencia virtual</h3>
-                    <p>Ingresá tu consulta nuestro <br>
-                        equipo se pondrá en contacto.</p>
-                    <a class="button--CTA" href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200"> Solicitar
-                        atención <i>></i></a>
-                </div>
-            </div>
+    <section class="section--3" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine" id="medios"><br>
+        <h2>Comenzá a cobrar con <b class="highlight color--primary"> farmapay </b></h2>
+        <h4>Ofrecemos múltiples opciones de cobro para que sea fácil y rápido.</h4>
+        <div class="articles">
+            <article class="izq" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="title">Smart POS farmapay</div>
+                <p>Cobrá con tarjetas de crédito, débito o QR.</p>
+                <br>
+                <ul>
+                    <li>Tecnología 4G y wifi</li>
+                    <li>Impresión de comprobantes</li>
+                    <li>Acepta tarjetas con chip, banda magnética y contactless</li>
+                </ul>
+                <img class="qr" src="assets/qr.gif" alt="qr" srcset="">
+                <button class="qr"><a target="_blank" href="https://farmapay-n395.vercel.app/precios.html">Conocer más
+                        <i>></i></a></button>
+            </article>
+            <article class="der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <div class="title">Link de pago</div>
+                <p>Cobrá a distancia, en menos de un minuto y de forma segura a través de Whatsapp, email y canales
+                    digitales.
+                </p>
+                <img class="http" src="assets/http.gif" alt="message http ..." srcset="">
+                <button class="http"><a target="_blank" href="https://farmapay-n395.vercel.app/precios.html">Conocer más
+                        <i>></i></a></button>
+            </article>
         </div>
     </section>
+    <section class="section--4" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+        <div class="CTA">
+            <div class="content">
+                <h2>Sumá <b class="highlight">famapay</b> a tu farmacia y recibí tu POS <b
+                        class="highlight color--secondary">100% bonificado</b></h2>
+                <p>Sin costo de mantenimiento ni apertura.</p>
+            </div>
+            <button class="button--CTA"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta </a>
+                <i>></i></button>
+        </div>
+        <div class="map">
+            <div class="content" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
+                <h2>Llegamos a
+                    tu farmacia,
+                    donde sea
+                    que esté</h2>
+                <p style="font-size: 18px;"><b class="color--secondary">farmapay</b> está presente
+                    en todo el país.</p>
+            </div>
+            <div class="illustration" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine"><img id="map"
+                    src="assets/map.svg" alt="" srcset=""></div>
+            <div class="point point--1"><img
+                    src="assets/logo-icon.svg" alt="" srcset=""></div>
+            <div class="point point--2"><img
+                    src="assets/logo-icon.svg" alt="" srcset=""></div>
+            <div class="point point--3"><img
+                    src="assets/logo-icon.svg" alt="" srcset=""></div>
+            <div class="point point--4"><img
+                    src="assets/logo-icon.svg" alt="" srcset=""></div>
+            <div class="point point--5"><img
+                    src="assets/logo-icon.svg" alt="" srcset=""></div>
+        </div>
+    </section>
+    <section class="section--5" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine" id="crear-cuenta">
+        <h2>Somos la <b class=" highlight color--primary">plataforma financiera</b> del ecosistema farmacéutico</h2>
+        <button class="button--CTA"><a target="_blank" href="https://crearcuenta.farmapay.com.ar/">Crear cuenta </a>
+            <i>></i></button>
     </section>
     <footer>
-        <div class="izq">
+        <div class="izq" data-aos="fade-right" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <img src="assets/logo.png" alt="" srcset="">
             <div class="rrss">
                 <a href="https://www.linkedin.com/company/farmapay/"><img src="assets/in.svg" alt="" srcset=""></a>
@@ -265,7 +283,7 @@
                         srcset=""></a>
             </div>
         </div>
-        <div class="der">
+        <div class="der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <div class="title">Legales</div>
             <ul>
                 <li><a href="contratos.html">Contratos de adhesión - Ley N° 24.240 <br>de Defensa del Consumido</a></li>
@@ -275,7 +293,7 @@
                 <li><a href="https://odoo.farmapay.com.ar/helpdesk/farmapay-portal-200">Libro de quejas online</a></li>
             </ul>
         </div>
-        <div class="der">
+        <div class="der" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <div class="title">Contacto</div>
             <ul>
                 <li><a href="faq.html">Contacto y preguntas frecuentes</a></li>
@@ -283,7 +301,7 @@
                 </li>
             </ul>
         </div>
-        <div class="bottom">
+        <div class="bottom" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <p class="texto">Soluciones de Pago S.A. ofrece servicios de pago (bajo el código de proveedor número
                 34519), y no se encuentra autorizada a operar como entidad financiera por el Banco Central de la
                 República Argentina. Los fondos acreditados en las Cuentas de Pago no constituyen depósitos en una
@@ -292,12 +310,79 @@
             </p>
         </div>
 
-        <div class="bottom">
+        <div class="bottom" data-aos="fade-in" data-aos-duration="800" data-aos-easing="ease-in-sine">
             <img src="assets/image1.webp" alt="" srcset="">
             <a href="https://www.bcra.gob.ar/BCRAyVos/Usuarios_Financieros.asp"><img src="assets/image2.webp" alt=""
-                    width="330" srcset=""></a>
+                    width="280" srcset=""></a>
         </div>
     </footer>
+    <script>
+        AOS.init();
+        const animateList = [].slice.call(document.querySelectorAll('.__animate__animated'))
+        animateList.map(function (animateEl) {
+            new Waypoint({
+                element: animateEl,
+                offset: 'bottom-in-view',
+                handler: function (direction) {
+                    //https://stackoverflow.com/a/56914528/3929620
+                    animateEl.className = animateEl.className.replace(/__animate__/g, 'animate__')
+                    this.destroy()
+                },
+            })
+        })
+        const animation = lottie.loadAnimation({
+            container: document.getElementById('lottie-animation'), // Contenedor
+            renderer: 'svg', // Renderizado en SVG (también puedes usar canvas o html)
+            loop: true, // Si la animación debe repetirse
+            autoplay: true, // Si debe iniciarse automáticamente
+            path: 'assets/qr.json' // Ruta al archivo JSON
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const inputMonto = document.querySelector(".input input");
+            const selectMedioCobro = document.querySelector(".select select");
+            const amountCobrado = document.querySelector(".result .total .amount");
+            const amountComision = document.querySelector(".result .comission .amount2");
+            const amountRecibir = document.querySelector(".result .total-send .amount");
+            const tiempoAcreditacion = document.querySelector(".result .time .amount");
+            const subtitleComision = document.querySelector(".result .comission .subtitle2");
+
+            const tasasComision = {
+                tdd: { comision: 0.016, tiempo: "24hs", label: "1,6% + IVA" }, // Tarjeta de débito
+                tdc: { comision: 0.027, tiempo: "8 días", label: "2,7% + IVA" }, // Tarjeta de crédito
+                qr: { comision: 0.008, tiempo: "12hs", label: "0,8% + IVA" }   // QR
+            };
+
+            const calcular = () => {
+                const montoVenta = parseFloat(inputMonto.value) || 0;
+                const medioCobro = selectMedioCobro.value;
+
+                if (!tasasComision[medioCobro]) {
+                    return;
+                }
+
+                const { comision, tiempo, label } = tasasComision[medioCobro];
+
+                // Calcular comisiones
+                const montoComision = montoVenta * comision;
+                const iva = montoComision * 0.21; // 21% de IVA sobre la comisión
+                const totalDescuento = montoComision + iva;
+                const totalRecibir = montoVenta - totalDescuento;
+
+                // Actualizar valores en el DOM
+                amountCobrado.textContent = `$${montoVenta.toFixed(2)}`;
+                amountComision.textContent = `- ($${totalDescuento.toFixed(2)})`;
+                amountRecibir.textContent = `$${totalRecibir.toFixed(2)}`;
+                tiempoAcreditacion.textContent = tiempo;
+                subtitleComision.textContent = `(${label})`;
+            };
+
+            // Eventos
+            inputMonto.addEventListener("input", calcular);
+            selectMedioCobro.addEventListener("change", calcular);
+        });
+
+    </script>
 </body>
 
 </html>
